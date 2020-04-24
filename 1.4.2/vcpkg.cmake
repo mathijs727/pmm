@@ -176,7 +176,7 @@ function(_pmm_vcpkg)
         set(cmd ${CMAKE_COMMAND} -E env
                 CC=${CMAKE_C_COMPILER}
                 CXX=${CMAKE_CXX_COMPILER}
-            "${PMM_VCPKG_EXECUTABLE}" install -disableMetrics
+            "${PMM_VCPKG_EXECUTABLE}" install
                 --triplet "${ARG_TRIPLET}"
                 ${ARG_REQUIRES}
             )
